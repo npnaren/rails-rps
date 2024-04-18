@@ -1,1 +1,27 @@
-<%= @random_move %>
+<div>
+  <a href="/rock">Play Rock</a>
+</div>
+<div>
+  <a href="/paper">Play Paper</a>
+</div>
+<div>
+  <a href="/scissors">Play Scissors</a>
+</div>
+</div>
+
+
+<% if @random_move && @result %>
+  <h1>
+    We played Scissors!
+  </h1>
+  <h1>
+    They played <%= @random_move %>!
+  </h1>
+  <h1>
+    <%= @result %>
+  </h1>
+<% end %>
+
+<div class="footer">
+  <a href="/">Rules</a>
+</div>

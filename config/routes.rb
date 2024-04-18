@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  get ("/", { :controller => "homepage", :action => "rules" })
-  get ("/rock", { :controller => "playrock", :action => "rock" }) 
-  get ("/paper", { :controller => "playpaper", :action => "paper" })
-  get ("/scissors", { :controller => "playscissors", :action => "scissors" })
-  
+  get '/', to: 'homepage#rules'
+  get '/rock', to: 'playrock#rock'
+  get '/paper', to: 'playpaper#paper'
+  get '/scissors', to: 'playscissors#scissors'
 end
